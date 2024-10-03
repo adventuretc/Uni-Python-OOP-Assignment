@@ -1,0 +1,11 @@
+#!/bin/bash
+
+DIR=`dirname "$BASH_SOURCE[0]"`
+cd "$DIR"
+echo "Current dir: $DIR"
+
+gitg # ez a program mindig a cwd-ből próbál meg git repo-t betölteni.
+
+# vagy:
+
+# gitkraken --path .
